@@ -1,5 +1,3 @@
-# Dockerfile
-# Pull the base image
 FROM node:13.12.0-alpine
 # Set the working directory
 WORKDIR /react-docker
