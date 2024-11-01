@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import ServiceForm from "./components/ServiceForm"
+import Service from "./components/Service"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src</code> and save
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container-fluid">
+        <Router>
+              <Routes>
+                  <Route path="/ServiceForm" element={<ServiceForm />} />
+                  <Route path="/service" element={<Service />} />
+              </Routes>
+        </Router>
+      </div>
+    </>
   );
 }
 

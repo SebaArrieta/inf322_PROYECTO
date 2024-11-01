@@ -1,0 +1,36 @@
+.card{
+    background-color: #EAD7BB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem; /* Ajusta el tamaño del texto */
+    font-weight: bold; /* Hace el texto más grueso */
+    color: #333; /* Color oscuro para el texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 1px; /* Espacio entre letras */
+}
+
+.descripcion-textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 200px; /* Aumenta la altura aquí según tus necesidades */
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+    resize: none; /* Deshabilita el redimensionamiento manual */
+    padding: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.btn-Editar{
+    margin-top: 20px;
+    background-color: #113946;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
