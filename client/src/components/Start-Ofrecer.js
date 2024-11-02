@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Start.css';
 import {useNavigate} from 'react-router-dom';
 
-function Pag1() {
+function StartOfrecer() {
     const navigate = useNavigate();
   return (
     <div className="container">
@@ -15,4 +15,4 @@ function Pag1() {
   );
 }
 
-export default Pag1;
+export default StartOfrecer;
