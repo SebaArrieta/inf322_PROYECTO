@@ -1,0 +1,72 @@
+/* App.css */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background-color: #fdf5cc;
+    height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    font-size: 18px;
+    margin-right: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+  }
+  
+  .search-button {
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  
+  .grid-item {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffcc80;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid-item img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .grid-item.selected {
+    border: 2px solid #3498db;
+    background-color: #ffeb99;
+  }
+  
