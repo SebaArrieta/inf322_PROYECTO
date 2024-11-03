@@ -22,6 +22,7 @@ const Service = () => {
 
     return (
         <div className="container d-flex justify-content-center align-items-center vh-100">
+            <button className="back-button" onClick={() => navigate ('/')} >←</button>
             <div className="card p-4">
                 <h2 className="text-center">Resumen del Servicio</h2>
                 <h5 className="card-title text-center">{Datos.Nombre} {Datos.Apellido}</h5>
