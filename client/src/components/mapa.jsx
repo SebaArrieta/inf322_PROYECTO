@@ -74,6 +74,19 @@ export const Mapa = () => {
           }}
       />
 
+      <div style={{
+          position: 'absolute',
+          top: "500px",
+          left: "150px",
+          width: '10px',
+          height: '10px',
+          backgroundColor: 'blue',
+          borderRadius: '50%',
+          transform: 'translate(-50%, -50%)', // Centra el punto en las coordenadas
+        }}>
+
+      </div>
+      
       <button 
         onClick={() => enviar(dato_1)}  
         style={{
