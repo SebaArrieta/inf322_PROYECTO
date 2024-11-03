@@ -11,7 +11,7 @@ export const Mapa = () => {
   const navigate = useNavigate();
 
   const nav_return = () =>{
-    navigate('/paneles');
+    navigate('/options');
 } 
 
   const enviar = (datos) =>{

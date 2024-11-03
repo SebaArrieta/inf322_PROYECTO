@@ -6,6 +6,7 @@ function StartOfrecer() {
     const navigate = useNavigate();
   return (
     <div className="container">
+      <button className="back-button" onClick={() => navigate('/')}>←</button>
       <h1>Servicios Domésticos a la puerta de tu casa</h1>
       <div className="button-container">
         <button className="btn" onClick={() => navigate ('/ServiceForm')}>Prestar servicio</button>
