@@ -15,11 +15,11 @@
   .button-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espacio entre los botones */
+    gap: 20px;
   }
   
   .btn {
-    background-color: #113946; /* Color de fondo del botón */
+    background-color: #113946;
     border: none;
     color: white;
     padding: 15px 30px;
@@ -33,6 +33,6 @@
   }
   
   .btn:hover {
-    background-color: #BCA37F; /* Color del botón al pasar el mouse */
+    background-color: #BCA37F;
   }
   

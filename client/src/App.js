@@ -6,6 +6,7 @@ import StartOfrecer from "./components/Start-Ofrecer"
 import Mapa from './components/mapa'
 import Perfil from './components/perfil'
 import Checking from './components/check'
+import Options from './components/Options'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                   <Route path='/mapa' element= {<Mapa/>}/>
                   <Route path='/perfil' element= {<Perfil/>}/>
                   <Route path='/check' element= {<Checking/>}/>
+                  <Route path='/options' element={<Options/>}/>
               </Routes>
         </Router>
       </div>
