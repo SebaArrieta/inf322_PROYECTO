@@ -36,7 +36,7 @@ const ServiceForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        navigate('/check', { state: { msg:'Servicio publicado', nav:'/service', Datos: {...Datos} } })
+        navigate('/service', { state: { Datos: {...Datos} } })
     }
 
     return (

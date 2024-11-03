@@ -8,10 +8,9 @@ export const Checking = ()=>{
 
     const msg = location.state?.msg || '';
     const nav = location.state?.nav || '/';
-    const Datos = location.state?.Datos || '';
 
     const nav_inicio = () =>{
-        navigate(nav, { state: { Datos: {...Datos} } })
+        navigate(nav)
     }
 
     return (
@@ -39,9 +38,18 @@ export const Checking = ()=>{
                     objectFit: 'cover',  
                 }} 
             />
+
+            <p style={{
+                backgroundColor: '#113946',      
+                border: 'none',
+                borderRadius: '5px',   
+                color: '#ffffff',          
+                cursor: 'pointer',
+                padding: '5px'
+            }}>Continuar</p>
             </button>
             
-            <p>{msg}</p>
+            <p className="font-weight-bold">{msg}</p>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import "../styles/Service.css"
 
@@ -21,7 +21,7 @@ const Service = () => {
     }
 
     const confirmar = () =>{
-        navigate('/publicado')
+        navigate('/check', {state:{msg:"Servicio Publicado"}})
     } 
     
     return (
