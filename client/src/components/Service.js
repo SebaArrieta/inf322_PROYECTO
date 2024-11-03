@@ -20,6 +20,10 @@ const Service = () => {
         navigate('/ServiceForm', { state: { Datos: Datos } });
     }
 
+    const confirmar = () =>{
+        navigate('/publicado')
+    } 
+    
     return (
         <div className="container d-flex justify-content-center align-items-center vh-100">
             <button className="back-button" onClick={() => navigate ('/')} >←</button>
@@ -48,6 +52,9 @@ const Service = () => {
 
                 <div className="text-center">
                     <button className="btn btn-primary btn-Editar" onClick={handleEdit}>Editar</button>
+                </div>
+                <div className="text-center">
+                    <button className="btn btn-primary btn-Editar" onClick={confirmar}>Confirmar</button>
                 </div>
             </div>
         </div>
