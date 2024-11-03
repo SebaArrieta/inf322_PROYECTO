@@ -13,7 +13,6 @@ const ServiceForm = () => {
         Descripcion: ""
     });
 
-    const [errors, setErrors] = useState({});
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -37,7 +36,7 @@ const ServiceForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        navigate('/Service', { state: { Datos: Datos } });
+        navigate('/check', { state: { msg:'Servicio publicado', nav:'/service', Datos: {...Datos} } })
     }
 
     return (

@@ -1,12 +1,17 @@
 import React from 'react';
 import check from '../assets/check.png'
-import { useNavigate} from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export const Checking = ()=>{
+    const location = useLocation();
     const navigate = useNavigate();
 
+    const msg = location.state?.msg || '';
+    const nav = location.state?.nav || '/';
+    const Datos = location.state?.Datos || '';
+
     const nav_inicio = () =>{
-        navigate('/')
+        navigate(nav, { state: { Datos: {...Datos} } })
     }
 
     return (
@@ -36,7 +41,7 @@ export const Checking = ()=>{
             />
             </button>
             
-            <p>Servicio Contrado</p>
+            <p>{msg}</p>
         </div>
     )
 }

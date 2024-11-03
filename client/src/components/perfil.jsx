@@ -15,7 +15,7 @@ export const Perfil = () => {
     }
 
     const nav_contratar = () =>{
-        navigate('/check');
+        navigate('/check', {state: {msg:"Servicio Contratado"}});
     }
 
 
