@@ -42,6 +42,7 @@ const ServiceForm = () => {
 
     return (
         <div className="container service-container">
+            <button className="back-button" onClick={() => navigate ('/')} >←</button>
             <div className="row justify-content-center">
                 <h2 className="text-center">Formulario de Servicio</h2>
                 <form className="col-md-7" onSubmit={handleSubmit}>

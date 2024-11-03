@@ -2,7 +2,7 @@ import React from 'react';
 import arrow from '../assets/arrow.png'; 
 import { useNavigate} from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+//import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export const Perfil = () => {
 

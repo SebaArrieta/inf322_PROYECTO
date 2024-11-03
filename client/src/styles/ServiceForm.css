@@ -31,14 +31,25 @@ label{
     margin: 10px 0px;
 }
 
+.back-button{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 h2 {
     text-align: center;
-    font-size: 2rem; /* Ajusta el tamaño del texto */
-    font-weight: bold; /* Hace el texto más grueso */
-    color: #333; /* Color oscuro para el texto */
-    margin-bottom: 20px; /* Espacio debajo del título */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    letter-spacing: 1px; /* Espacio entre letras */
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 input:focus {
