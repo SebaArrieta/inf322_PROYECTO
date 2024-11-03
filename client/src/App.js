@@ -7,6 +7,7 @@ import Mapa from './components/mapa'
 import Perfil from './components/perfil'
 import Checking from './components/check'
 import Options from './components/Options'
+import Publicado from './components/publicado'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
                   <Route path='/perfil' element= {<Perfil/>}/>
                   <Route path='/check' element= {<Checking/>}/>
                   <Route path='/options' element={<Options/>}/>
+                  <Route path='/publicado' element= {<Publicado/>}/>
               </Routes>
         </Router>
       </div>
