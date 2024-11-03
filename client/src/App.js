@@ -20,6 +20,7 @@ function App() {
                   <Route path="/ofrecer" element={<StartOfrecer />} />
                   <Route path="/ServiceForm" element={<ServiceForm />} />
                   <Route path="/service" element={<Service />} />
+                  <Route path="/options" element={<Options />} />
                   <Route path='/mapa' element= {<Mapa/>}/>
                   <Route path='/perfil' element= {<Perfil/>}/>
                   <Route path='/check' element= {<Checking/>}/>
