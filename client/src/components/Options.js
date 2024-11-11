@@ -25,6 +25,9 @@ const Options = () => {
 
   return (
     <div className="container">
+      <p style={{
+        margin: "20px", fontSize: '30px',
+      }}>Seleccione un servicio</p>
       <div className="header">
         <button className="back-button" onClick={() => navigate('/buscar')}>←</button>
       </div>
@@ -44,3 +47,4 @@ const Options = () => {
 };
 
 export default Options;
+
