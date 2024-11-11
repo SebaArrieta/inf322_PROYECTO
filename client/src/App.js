@@ -7,13 +7,16 @@ import Mapa from './components/mapa'
 import Perfil from './components/perfil'
 import Checking from './components/check'
 import Options from './components/Options'
+import Publicado from './components/publicado'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NavBar from './components/nav_bar';
 
 function App() {
   return (
     <>
       <div className="container-fluid">
         <Router>
+        <NavBar />
               <Routes>
                   <Route path="/" element={<Start />} />
                   <Route path="/buscar" element={<StartBuscar />} />
@@ -24,7 +27,7 @@ function App() {
                   <Route path='/mapa' element= {<Mapa/>}/>
                   <Route path='/perfil' element= {<Perfil/>}/>
                   <Route path='/check' element= {<Checking/>}/>
-                  <Route path='/options' element={<Options/>}/>
+                  <Route path='/publicado' element= {<Publicado/>}/>
               </Routes>
         </Router>
       </div>
