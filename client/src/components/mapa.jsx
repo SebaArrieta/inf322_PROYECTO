@@ -1,6 +1,5 @@
 import React from 'react';
 import mapa from '../assets/Captura.PNG';
-import puntero from '../assets/location.png'; 
 import arrow from '../assets/arrow.png'; 
 import { useNavigate} from 'react-router-dom'
 import foto from '../assets/perfil.png';
@@ -67,13 +66,12 @@ export const Mapa = () => {
         src={mapa}  
         alt="Mapa" 
         style={{
-          width: '100vw',
-          height: '100vh',
+          width: '98vw',
+          height: '98vh',
           top: 0,
           left: 0,
           }}
       />
-
       <div style={{
           position: 'absolute',
           top: "500px",
@@ -86,7 +84,6 @@ export const Mapa = () => {
         }}>
 
       </div>
-      
       <button 
         onClick={() => enviar(dato_1)}  
         style={{
@@ -101,9 +98,9 @@ export const Mapa = () => {
         }}
       >
         <img 
-          src={puntero} 
-          alt="Puntero" 
-          style={{ width: '40px', height: '40px' }}  
+          src={foto}
+          alt=""   
+          style={{ width: '40px', height: '40px',borderRadius: '50%'}}  
         />
       </button>
       <button 
@@ -120,9 +117,9 @@ export const Mapa = () => {
         }}
       >
         <img 
-          src={puntero} 
-          alt="Puntero" 
-          style={{ width: '40px', height: '40px'}}  
+          src={foto2}
+          alt=""   
+          style={{ width: '40px', height: '40px',borderRadius: '50%'}}  
         />
       </button>
     </div>
@@ -130,3 +127,4 @@ export const Mapa = () => {
 };
 
 export default Mapa;
+
