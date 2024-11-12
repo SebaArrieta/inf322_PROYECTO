@@ -14,7 +14,6 @@ import NavBar from './components/nav_bar';
 function App() {
   return (
     <>
-      <div className="container-fluid">
         <Router>
         <NavBar />
               <Routes>
@@ -30,7 +29,6 @@ function App() {
                   <Route path='/publicado' element= {<Publicado/>}/>
               </Routes>
         </Router>
-      </div>
     </>
   );
 }
