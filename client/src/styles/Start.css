@@ -38,16 +38,22 @@
   }
   
   .logo-container {
+    margin-bottom: 30px; /* Space between the logo and the title */
+}
+
+.logo-wrapper {
+    width: 200px; /* Adjust as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes it circular */
+    border: 3px solid #BCA37F; /* Border color */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px; /* Espaciado entre el logo y el título */
+    background-color: #000; /* Matches the background of the logo */
 }
 
 .logo {
-    width: 200px; /* Tamaño del logo */
-    height: 200px; /* Asegura la proporción */
-    border-radius: 50%; /* Hace el logo circular */
-    object-fit: cover; /* Asegura que la imagen se ajuste */
-    border: 3px solid #BCA37F; /* Opcional: borde decorativo */
+    width: 150px; /* Logo size */
+    height: 150px;
+    object-fit: contain; /* Ensures proper fitting */
 }
