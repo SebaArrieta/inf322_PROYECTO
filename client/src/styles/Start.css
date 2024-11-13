@@ -1,10 +1,11 @@
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* Alinea los elementos al inicio */
     align-items: center;
     height: 100vh;
     text-align: center;
+    margin-top: -50px;
   }
 
   h1 {
@@ -36,3 +37,17 @@
     background-color: #BCA37F;
   }
   
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px; /* Espaciado entre el logo y el título */
+}
+
+.logo {
+    width: 200px; /* Tamaño del logo */
+    height: 200px; /* Asegura la proporción */
+    border-radius: 50%; /* Hace el logo circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste */
+    border: 3px solid #BCA37F; /* Opcional: borde decorativo */
+}
